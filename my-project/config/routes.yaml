@@ -1,0 +1,19 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+app_product:
+    path: /product
+    controller: App\Controller\ProductController::index
+
+create_product:
+    path: /product/create
+    controller: App\Controller\ProductController::createProduct
+
+delete_product:
+    path: /product/{id}/delete
+    controller: App\Controller\ProductController::deleteProduct
+
+edit_product:
+    path: /product/{id}/edit
+    controller: App\Controller\ProductController::editProduct
